@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'puma'
+gem 'rack'
+gem 'roda'
+gem 'tilt'
+gem 'sequel'
+gem 'bcrypt'
+gem 'rack-protection'
+gem 'rack_csrf'
