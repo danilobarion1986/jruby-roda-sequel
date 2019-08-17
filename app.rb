@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 require 'roda'
 
+# Roda's routing tree
 class App < Roda
   route do |r|
     # GET / request
