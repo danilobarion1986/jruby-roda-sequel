@@ -7,21 +7,15 @@ class App < Roda
   route do |r|
     # GET / request
     r.root do
-      r.redirect '/hello'
+      r.redirect '/healthcheck'
     end
 
-    # /hello branch
-    r.on 'hello' do
-      # Set variable for all routes in /hello branch
-      @greeting = 'Hello'
-      # /hello request
+    r.is 'healthcheck' do
 
-      r.is do
-        # GET /hello request
-        r.get do
-          "#{@greeting}!"
-        end
-      end
+    end
+
+    r.on 'v1/beneficios' do
+      "<h2>Hello Danilo!</h2>"
     end
   end
 end
